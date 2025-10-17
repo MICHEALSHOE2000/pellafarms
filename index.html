@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pella Farms — Own a Farm, Earn 18% Every Year</title>
+  <meta name="description" content="Pella Farms — Grow wealth through farmland investments with 18% yearly returns and full ownership after 5 years. Registration deadline: 31 November 2025." />
+
+  <!-- Link to external CSS (will be provided in Stage 3) -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Prefetch fonts or include system font fallback in CSS later -->
+</head>
+<body>
+  <!-- Page header / main navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Pella Farms - Home">
+        <!-- Simple text logo for prototype — replace with image if needed -->
+        <strong>Pella Farms</strong>
+        <small class="tagline">A Pella Group company</small>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#how-it-works">How it Works</a></li>
+          <li><a href="#packages">Choose Your Plan</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#guarantees">Guarantees</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sticky CTA (visible in header on larger screens; will also be present as sticky bottom on mobile) -->
+      <div class="header-cta">
+        <button class="btn-primary" onclick="document.querySelector('.cta-form-panel').classList.add('open')">
+          Get in touch today
+        </button>
+        
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main id="main" role="main">
+    <!-- HERO / LEAD SECTION -->
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-heading">
+            Own a Farm — Earn 18% Every Year and Still Own the Land Forever
+          </h1>
+          <p class="hero-sub">
+            DUAL WEALTH CREATION OWN LAND & EARN GUARANTEED FARM INCOME AT PELLA FARMS
+          </p>
+
+          <!-- Lead paragraph (keeps full content exactly as provided) -->
+          <p class="lead">
+            If you’re tired of watching your money sit idle in the bank while prices keep rising, here’s something different…
+          </p>
+
+          <p>
+            At Pella Farms (a subsidiary of Pella Group), we help Nigerians grow wealth safely through farmland investments that pay steady returns every year for 5 years — and after that, the land becomes 100% yours.
+          </p>
+
+          <p>
+            You don’t need to know anything about farming.
+            We handle everything — you just sit back, get paid, and later own your piece of land forever.
+          </p>
+
+          <!-- Countdown (live JS-enhanced later). `aria-live` announces updates to assistive tech -->
+          <div id="registration-deadline" class="deadline" aria-live="polite">
+            <strong>Registration Deadline:</strong>
+            <span id="countdown" aria-hidden="false">31st November 2025</span>
+          </div>
+
+          <!-- Primary CTAs -->
+
+        <!-- Hero visual placeholder (will style/replace with image in CSS stage) -->
+        <figure class="hero-media" role="img" aria-label="Green farmland with premium touch">
+          <img src="IMG/pellas.jpg" alt="Pella Farm Estate (visual placeholder)" />
+          <figcaption class="sr-only">Pella Farms estate visual (placeholder).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- WHY: Problem statement & quick value bullets -->
+    <section id="why" class="why" aria-labelledby="why-heading">
+      <div class="container">
+        <h2 id="why-heading">Why Keep Saving When Inflation Is Chopping Your Money?</h2>
+
+        <p>
+          Let’s face it — ₦1 million today won’t buy what ₦1 million bought two years ago.
+          Banks pay you 6–8%, but inflation is eating up more than that every year.
+        </p>
+
+        <p>Now imagine this instead:</p>
+
+        <ul class="benefits-list">
+          <li>✅ You earn 18% returns yearly.</li>
+          <li>✅ You become a verified landowner.</li>
+          <li>✅ Your land appreciates every single year.</li>
+          <li>✅ Zero Management Hassle- Pella Farms Handle everything you collect Profit.</li>
+          <li>✅ FUTURE PROOF ASSET</li>
+        </ul>
+
+        <p>That’s not a dream — that’s what Pella Farms investors enjoy right now.</p>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="how-it-works" aria-labelledby="how-heading">
+      <div class="container">
+        <h2 id="how-heading">How the “Own a Farm” Programme Works</h2>
+
+        <ol class="process-steps" aria-label="Programme steps">
+          <li><strong>You Invest</strong> — Choose how many plots you want (starting from ₦600,000).</li>
+          <li><strong>Full Land Ownership</strong> — Deed of Assignment Issued Immiedately after Purchase.</li>
+          <li><strong>We Farm for You</strong> — Our trained agronomists and managers handle all the work.</li>
+          <li><strong>You Earn</strong> — Get your 18% returns annually, steady for 5 years.</li>
+          <li><strong>You Own It Forever</strong> — After 5 years, your farmland title is transferred to you — legally and fully.</li>
+        </ol>
+
+        <p>Simple. Transparent. Real.</p>
+
+        <p>And the best part? Your investment is insured by the Nigeria Agricultural Insurance Company (NAIC) — so your peace of mind is guaranteed.</p>
+      </div>
+    </section>
+
+    <!-- COMPARISON TABLE: Why this beats other investments -->
+    <section id="comparison" class="comparison" aria-labelledby="comparison-heading">
+      <div class="container">
+        <h2 id="comparison-heading">Why This Beats Every Other “Investment” Out There</h2>
+
+        <div class="table-responsive">
+          <table class="comparison-table" role="table" aria-describedby="comparison-caption">
+            <caption id="comparison-caption" class="sr-only">Comparison between regular savings and Pella Farms investment</caption>
+            <thead>
+              <tr>
+                <th scope="col">Regular Savings</th>
+                <th scope="col">Pella Farms Investment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>6–8% bank interest</td>
+                <td>18% annual returns</td>
+              </tr>
+              <tr>
+                <td>You don’t own anything</td>
+                <td>You own the farmland </td>
+              </tr>
+              <tr>
+                <td>Inflation reduces your value</td>
+                <td>Land appreciates with inflation</td>
+              </tr>
+              <tr>
+                <td>You can’t see your money</td>
+                <td>You can visit your farm anytime</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST & PROOF (stats + legal docs) -->
+    <section id="trust" class="trust" aria-labelledby="trust-heading">
+      <div class="container">
+        <h2 id="trust-heading">We Know Nigerians Fear Scam — That’s Why We Built on Proof</h2>
+
+        <ul class="trust-list">
+          <li>
+            ✅ <span class="count" data-target="300">0</span>+ active investors receiving their yearly payments
+          </li>
+          <li>✅ Registered farmland in fertile locations across Oyo and Ogun States</li>
+          <li>✅ Legal documents: Deed of Assignment, Allocation Papers, and Survey Plans</li>
+          <li>✅ Farm insured by NAIC — your investment is protected</li>
+          <li>✅ Open-door policy — you can visit your farmland anytime</li>
+        </ul>
+        
+
+        <p>We don’t hide behind promises. You’ll see everything for yourself.</p>
+
+        <!-- Placeholder for small gallery of legal docs / proof badges -->
+        <div class="proof-gallery" aria-hidden="false" aria-label="Proof documents and insurance badge (placeholders)">
+          <img src="img/deed.jpg" alt="Deed of Assignment (placeholder)" />
+          <img src="img/deeds.jpg" alt="Survey Plan (placeholder)" />
+          <img src="img/naic.jpg" alt="NAIC Insurance badge (placeholder)" />
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading">Real Investors, Real Results</h2>
+
+        <div class="testimonial-list" role="list">
+          <blockquote class="testimonial" role="listitem">
+            <p>“I joined Pella Farms in 2020. My 18% returns come every year without stories. Knowing the land will soon be mine gives me peace of mind.”</p>
+            <footer>— Chinedu A., Lagos</footer>
+          </blockquote>
+
+          <blockquote class="testimonial" role="listitem">
+            <p>“As a business owner, I needed a hands-free investment that still grows my money. Pella Farms gave me that and more.”</p>
+            <footer>— Mrs. Ayo K., Ibadan</footer>
+          </blockquote>
+        </div>
+
+        <!-- Small stat counters (JS-enhanced later) -->
+        <section id="stats-section" class="stats-section">
+          <div class="container">
+            <div class="stats">
+              <div class="stat">
+                <strong class="stat-number" data-target="300">0</strong>
+                <span class="stat-label">Active Investors</span>
+              </div>
+        
+              <div class="stat">
+                <strong class="stat-number" data-target="2">0</strong>
+                <span class="stat-label">States (Oyo & Ogun)</span>
+              </div>
+        
+              <div class="stat">
+                <strong class="stat-number" data-target="100">0</strong>
+                <span class="stat-label">Acres of Farmland</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+
+    <!-- PACKAGES / PRICING -->
+    <section id="packages" class="packages" aria-labelledby="packages-heading">
+      <div class="container">
+        <h2 id="packages-heading">Choose Your Plan</h2>
+
+        <p>Each plot earns you ₦108,000 yearly (18% of ₦600,000). That’s steady income + ownership of real land.</p>
+
+        <div class="packages-grid" role="list">
+          <article class="package" role="listitem" aria-labelledby="package-1-title">
+            <h3 id="package-1-title">1 Plot</h3>
+            <p class="price">₦600,000</p>
+            <p class="savings">—</p>
+            <button class="btn btn-outline package-cta" data-plots="1">Get 1 Plot</button>
+          </article>
+
+          <article class="package" role="listitem" aria-labelledby="package-3-title">
+            <h3 id="package-3-title">3 Plots</h3>
+            <p class="price">₦1,750,000</p>
+            <p class="savings">Save ₦50,000</p>
+            <button class="btn btn-outline package-cta" data-plots="3">Get 3 Plots</button>
+          </article>
+
+          <article class="package" role="listitem" aria-labelledby="package-6-title">
+            <h3 id="package-6-title">6 Plots</h3>
+            <p class="price">₦3,500,000</p>
+            <p class="savings">Save ₦100,000</p>
+            <button class="btn btn-outline package-cta" data-plots="6">Get 6 Plots</button>
+          </article>
+        </div>
+
+        <p class="limited-note"><strong>Limited Slots — Don’t Wait Till It’s Too Late</strong></p>
+      </div>
+    </section>
+<!-- POPUP FORM (Hidden by default) -->
+<div id="packageFormOverlay" class="form-overlay" aria-hidden="true">
+  <div class="form-popup" role="dialog" aria-labelledby="visit-form-title" aria-modal="true">
+    <button class="close-btn" aria-label="Close form">&times;</button>
+    <h3 id="visit-form-title">Book Your Farm Visit</h3>
+
+    <form id="visit-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="hidden" name="selected_package" id="selected_package" />
+
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your full name" />
+
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" />
+
+      <label for="email">Email Address (optional)</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" />
+
+      <label for="location">Your Location *</label>
+      <input type="text" id="location" name="location" required placeholder="City or State" />
+
+      <label for="visitDate">Preferred Visit Date *</label>
+      <input type="date" id="visitDate" name="visit_date" required />
+
+      <button type="submit" class="btn btn-primary">Submit Booking</button>
+    </form>
+  </div>
+</div>
+
+    <!-- INVESTMENT PACKAGE DETAILS -->
+    <section id="investment-includes" class="investment-includes" aria-labelledby="includes-heading">
+      <div class="container">
+        <h2 id="includes-heading">Your Investment Package Includes:</h2>
+
+        <ul class="includes-list">
+          <li>✅ Fertile farmland in our managed estate</li>
+          <li>✅ 18% annual returns, guaranteed for 5 years</li>
+          <li>✅ Full land ownership after 5 years</li>
+          <li>✅ All legal documents (Deed of Assignment, Allocation, Survey)</li>
+          <li>✅ Farm management handled by experts</li>
+          <li>✅ Insurance by Nigeria Agricultural Insurance Company (NAIC)</li>
+          <li>✅ BONUS: Tree planting to increase your land’s long-term value</li>
+        </ul>
+      </div>
+    </section>
+<!-- FAQ SECTION -->
+<section id="faqs" class="faqs" aria-labelledby="faq-heading">
+  <div class="container">
+    <h2 id="faq-heading">10 FAQs – Addressing Investor Concerns</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">How secure is my investment?</button>
+      <div class="faq-answer">
+        <p>Your ownership is protected by a <strong>Deed of Assignment</strong> and your farm is <strong>insured by NAIC</strong> — ensuring full protection against loss or fraud.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What crops are grown on my land?</button>
+      <div class="faq-answer">
+        <p>We cultivate <strong>high-demand staples</strong> like cassava, maize, and vegetables — rotated seasonally for soil health and maximum yield.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I visit my farm?</button>
+      <div class="faq-answer">
+        <p>Yes! You’re welcome to visit. <strong>Scheduled tours are available quarterly</strong> (Monday–Friday only).</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What happens after 5 years?</button>
+      <div class="faq-answer">
+        <p>You can <strong>renew your contract</strong>, <strong>sell the land</strong>, or <strong>develop it</strong> — it’s 100% your choice.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Are returns taxable?</button>
+      <div class="faq-answer">
+        <p>Pella Farms handles all <strong>tax deductions and remittances</strong>. You receive <strong>net profits</strong>, fully compliant with Nigerian tax laws.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I resell my plots?</button>
+      <div class="faq-answer">
+        <p>Yes! Our <strong>Pella Estate Resale Desk</strong> helps you sell at <strong>zero commission</strong> for first-time sellers.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How soon do I start earning?</button>
+      <div class="faq-answer">
+        <p>Earnings begin <strong>within your first harvest cycle (about 12 months)</strong> with progress updates shared regularly.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Can I buy more plots later?</button>
+      <div class="faq-answer">
+        <p>Yes, investors can <strong>expand anytime</strong>, subject to estate availability.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">What if I live abroad?</button>
+      <div class="faq-answer">
+        <p>We have many <strong>diaspora investors</strong>. Documents are handled digitally, and updates are shared via <strong>WhatsApp and email</strong>.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">How do I verify Pella Farms’ legitimacy?</button>
+      <div class="faq-answer">
+        <p>You can request legal documents and <strong>visit our Oyo or Ogun sites</strong> before investing. We believe in <strong>transparency and proof</strong>, not promises.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- URGENCY / CTA REMINDER -->
+    <section id="urgent-cta" class="urgent-cta" aria-labelledby="urgent-heading">
+      <div class="container">
+        <h2 id="urgent-heading">Don’t let another year pass watching inflation eat your savings while others grow their wealth.</h2>
+
+        <p>Make your money work for you like a farmer that never sleeps.</p>
+
+        <div class="urgent-actions">
+          <a href="#contact" class="btn btn-secondary">Secure Your Farmland Investment Now →</a>
+          <button id="urgent-contact" class="btn btn-primary">Claim Your Farmland Investment Now →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUARANTEES -->
+    <section id="guarantees" class="guarantees" aria-labelledby="guarantees-heading">
+      <div class="container">
+        <h2 id="guarantees-heading">Our Iron-Clad Guarantees</h2>
+
+        <div class="guarantee-list">
+          <div class="guarantee" id="guarantee-transparency" aria-labelledby="g1">
+            <h3 id="g1">🛡️ Transparency Guarantee</h3>
+            <p>You’ll get your documents, payment proofs, and progress updates — nothing hidden, everything verified.</p>
+          </div>
+
+          <div class="guarantee" id="guarantee-ownership" aria-labelledby="g2">
+            <h3 id="g2">🛡️ Ownership Guarantee</h3>
+            <p>After 5 years, your land is transferred to you legally and fully. Your name, your title, your land.</p>
+          </div>
+
+          <div class="guarantee" id="guarantee-insurance" aria-labelledby="g3">
+            <h3 id="g3">🛡️ Insurance Guarantee</h3>
+            <p>Every farm is covered by Nigeria Agricultural Insurance Company (NAIC) — your investment is protected from unforeseen risks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FIVE-YEARS CTA REFLECTION -->
+    <section id="five-years" class="five-years" aria-labelledby="five-years-heading">
+      <div class="container">
+        <h2 id="five-years-heading">Five Years from Now...</h2>
+
+        <p>You could be holding your land title, collecting your final 18% return, and thanking yourself for making a smart move today.</p>
+
+        <p>Or still thinking, “I wish I had started back then.”</p>
+
+        <p>The choice is yours — and it starts with one step.</p>
+
+        <a href="#contact" class="btn btn-primary">Claim Your Farmland Investment Now →</a>
+      </div>
+    </section>
+
+    
+    
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-about">
+        <h3>Pella Farms</h3>
+        <p>A Pella Group company — we help Nigerians grow wealth safely through farmland investments.</p>
+      </div>
+
+      <div class="footer-contact" id="footer-contact">
+        <h4>Contact</h4>
+        <p>📞 Call us at [phone number]</p>
+        <p>✉️ Email: <a href="mailto:[email address]">[email address]</a></p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#how-it-works">How it works</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#trust">Proof & Documents</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-legal">
+        <p>Registration Deadline: 31st November 2025</p>
+        <p>&copy; <span id="currentYear"></span> Pella Group. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+<!-- Sticky CTA Button -->
+<button class="cta-sticky" aria-label="Get in touch with Pella Farms">
+  💬 Get in touch today
+</button>
+
+<!-- Hidden Contact Form Panel -->
+<div class="cta-form-panel" id="cta-form">
+  <button class="cta-form-close" aria-label="Close form">&times;</button>
+  <h3>Get in touch today</h3>
+  <form id="contact-form">
+    <label>
+      Full Name
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      Phone Number
+      <input type="tel" name="phone" required />
+    </label>
+    <label>
+      WhatsApp (optional)
+      <input type="tel" name="whatsapp" />
+    </label>
+    <button type="submit" class="btn-primary">Send</button>
+  </form>
+</div>
+
+  <!-- Accessibility: skip link (visible when focused) -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Link to external JS (will be provided in Stage 4) -->
+  <script src="scripts.js" defer></script>
+
+  <!-- END OF HTML -->
+</body>
+</html>
