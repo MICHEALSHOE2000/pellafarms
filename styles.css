@@ -742,6 +742,17 @@
   max-height: 300px;
   padding: 15px 18px 25px;
 }
+.footer-contact a.footer-link {
+  color: #007b3a; /* Pella green */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.footer-contact a.footer-link:hover {
+  color: #004f27;
+  text-decoration: underline;
+}
 
   /* --------------------------
      End of styles.css
