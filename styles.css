@@ -104,17 +104,37 @@
     justify-content: space-between;
   }
   
-  /* Logo */
-  .logo{
-    display: flex;
-    gap: 0.5rem;
-    align-items: baseline;
-    text-decoration: none;
-    color: var(--green-900);
-  }
-  .logo strong{ font-size: 1.125rem; letter-spacing: 0.3px; }
-  .logo .tagline{ font-size: 0.75rem; color: var(--muted-text); }
-  
+  /* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* space between image and text */
+  text-decoration: none;
+  color: var(--text-color, #2a2a2a);
+}
+
+/* Logo image */
+.logo-img {
+  height: 40px; /* adjust as needed */
+  width: auto;
+  display: block;
+}
+
+/* Logo text */
+.logo-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #1b5e20; /* deep green accent */
+}
+
+/* Tagline beside it on same line */
+.logo .tagline {
+  font-size: 0.75rem;
+  color: #777;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}
+
   /* Nav (mobile: hidden behind menu — we keep a simple inline nav for prototype) */
   .main-nav{ display: none; } /* hidden on mobile for simplicity (hamburger could be added) */
   .nav-list{ list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0; }
