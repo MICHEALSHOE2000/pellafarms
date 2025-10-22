@@ -8,22 +8,7 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
   <!-- Link to external CSS (will be provided in Stage 3) -->
   <link rel="stylesheet" href="styles.css" />
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17671712755"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'AW-17671712755');
-</script>
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "tu2j5wwmxy");
-</script>
   <!-- Prefetch fonts or include system font fallback in CSS later -->
 </head>
 <body>
@@ -87,17 +72,50 @@
           <div id="registration-deadline" class="deadline" aria-live="polite">
             <strong>Registration Deadline:</strong>
             <span id="countdown" aria-hidden="false">31st November 2025</span>
-          </div>
-
-          <!-- Primary CTAs -->
-
-        <!-- Hero visual placeholder (will style/replace with image in CSS stage) -->
-        <figure class="hero-media" role="img" aria-label="Green farmland with premium touch">
-          <img src="IMG/pellas.jpg" alt="Pella Farm Estate (visual placeholder)" />
-          <figcaption class="sr-only">Pella Farms estate visual (placeholder).</figcaption>
-        </figure>
-      </div>
+          </div>      <!-- Hero visual placeholder (will style/replace with image in CSS stage) -->
     </section>
+<!-- FARM GALLERY & SOCIAL PROOF SECTION -->
+<section id="gallery" class="gallery-section" aria-labelledby="gallery-heading">
+  <div class="container">
+    <h2 id="gallery-heading">Experience Pella Farms</h2>
+    <p class="gallery-intro">Step into our thriving farmlands — where growth, sustainability, and profit meet.</p>
+
+    <!-- GALLERY IMAGES -->
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="img/farm1.jpg" alt="Farm workers harvesting cassava" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="img/farm2.jpg" alt="Lush maize plantation at Pella Farms" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="img/farm3.jpg" alt="Investors touring farmland" loading="lazy">
+      </div>
+      <div class="gallery-item">
+        <img src="img/farm4.jpg" alt="Tractors preparing farmland" loading="lazy">
+      </div>
+    </div>
+
+    <!-- SOCIAL PROOF COUNTERS -->
+    <div class="social-proof">
+      <h3>Trusted by Real Nigerians</h3>
+      <div class="proof-stats">
+        <div class="proof-item">
+          <strong class="count" data-target="300">0</strong><span>+</span>
+          <p>Active Investors</p>
+        </div>
+        <div class="proof-item">
+          <strong class="count" data-target="200">0</strong><span>+</span>
+          <p>Acres Under Management</p>
+        </div>
+        <div class="proof-item">
+          <strong class="count" data-target="5">0</strong><span>+</span>
+          <p>Years of Steady Growth</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     <!-- WHY: Problem statement & quick value bullets -->
     <section id="why" class="why" aria-labelledby="why-heading">
@@ -471,7 +489,13 @@
         <a href="mailto:sales@pellahomesandproperties.ng" class="footer-link">sales@pellahomesandproperties.ng</a>
       </p>
     </div>
-    
+    <p class="disclaimer">
+      *Disclaimer: Returns are based on current projections and are not guaranteed. Actual results may vary depending on farm performance and market conditions. Pella Group complies with all local investment regulations.
+    </p>
+    <div class="footer-links">
+      <a href="https://farmwealth.pellahomesandproperties.ng/terms.html">Terms & Conditions</a> |
+      <a href="https://farmwealth.pellahomesandproperties.ng/disclaimer.html">Investment Disclaimer</a>
+    </div>
 
       <div class="footer-links">
         <h4>Quick Links</h4>
@@ -520,9 +544,36 @@
 
   <!-- Link to external JS (will be provided in Stage 4) -->
   <script src="scripts.js" defer></script>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll('.count');
+      let started = false;
+  
+      function animateCounter() {
+        if (!started && window.scrollY + window.innerHeight > document.querySelector('.social-proof').offsetTop) {
+          counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const speed = 40;
+            const updateCount = () => {
+              const value = +counter.innerText;
+              const inc = target / 50;
+              if (value < target) {
+                counter.innerText = Math.ceil(value + inc);
+                setTimeout(updateCount, speed);
+              } else {
+                counter.innerText = target;
+              }
+            };
+            updateCount();
+          });
+          started = true;
+        }
+      }
+  
+      window.addEventListener('scroll', animateCounter);
+    });
+  </script>
+  
   <!-- END OF HTML -->
 </body>
 </html>
-
-
